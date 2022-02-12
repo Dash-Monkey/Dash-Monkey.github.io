@@ -1,0 +1,497 @@
+<!DOCTYPE html><!-- This website/webapp was created in Softr. https://www.softr.io --><!-- Last Published: Tue, August 10 2021 23:46:55 --><html lang="en"><head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="twitter:title" content="Dash Mon[k]ey"><meta property="twitter:title" content="Dash Mon[k]ey"><meta property="og:title" content="Dash Mon[k]ey">
+        <meta name="twitter:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi."><meta property="twitter:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi."><meta property="og:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi.">
+        
+
+        <title>Dash Mon[k]ey</title>
+        <meta name="description" content="Manage your web3 money in a web3 way!">
+
+        <link rel="icon" type="image/x-icon" href="">
+
+        
+        
+        <link href="css/css_3.css" rel="stylesheet"><link href="css/css_1.css" rel="stylesheet"><link href="css/css.css" rel="stylesheet"><link href="css/css_2.css" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+
+        <style type="text/css">
+
+            html {
+                scroll-behavior: smooth;
+                font-size: 16px;
+                overflow-x: hidden;
+            }
+
+            body {
+              overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .navbar-brand img {
+                    max-width: 15rem!important;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+
+            p, h1, h2, h3, h4, h5, small { white-space: pre-line; }
+
+            @media screen and (max-width: 768px) {
+              input, select, textarea {
+                font-size: 16px !important;
+              }
+            }
+
+            h1.sw-font-family-default,
+            h2.sw-font-family-default {
+                font-family: "Comfortaa";
+            }
+
+            h1.sw-font-weight-default,
+            h2.sw-font-weight-default {
+                font-weight: 600;
+            }
+
+            h1.sw-text-color-default,
+            h2.sw-text-color-default {
+                color: #f9d3b4;
+            }
+
+            section.sw-font-family-default,
+            header.sw-font-family-default,
+            nav.sw-font-family-default,
+            footer.sw-font-family-default,
+            div.sw-font-family-default,
+            span.sw-font-family-default,
+            small.sw-font-family-default,
+            pre.sw-font-family-default,
+            p.sw-font-family-default,
+            b.sw-font-family-default,
+            li.sw-font-family-default,
+            ul.sw-font-family-default,
+            a.sw-font-family-default,
+            h3.sw-font-family-default,
+            h4.sw-font-family-default,
+            h5.sw-font-family-default,
+            h6.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            span.sw-font-weight-default,
+            li.sw-font-weight-default span,
+            small.sw-font-weight-default,
+            li.sw-font-weight-default small,
+            pre.sw-font-weight-default,
+            p.sw-font-weight-default,
+            h3.sw-font-weight-default,
+            h4.sw-font-weight-default,
+            h5.sw-font-weight-default,
+            h6.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            span.sw-text-color-default,
+            li.sw-text-color-default span,
+            small.sw-text-color-default,
+            li.sw-text-color-default small,
+            pre.sw-text-color-default,
+            p.sw-text-color-default,
+            div.sw-text-color-default,
+            h3.sw-text-color-default,
+            h4.sw-text-color-default,
+            h5.sw-text-color-default,
+            h6.sw-text-color-default {
+                color: #eae7e5;
+            }
+
+            input.sw-font-family-default,
+            textarea.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            input.sw-font-weight-default,
+            textarea.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-family: "Open Sans";
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-weight: 300;
+            }
+
+            .sw-text-color-default[data-element='button'] {
+                color: #ffffff;
+            }
+
+            .sw-background-color-default[data-element='button'] {
+                background-color: #15181a;
+            }
+
+            .sw-border-radius-default[data-element='button'] {
+                border-radius: .25rem;
+            }
+
+            .sw-width-4xs { width: 10rem!important; } .sw-margin-right-4xs { margin-right: 1rem!important; } .sw-margin-top-4xs { margin-top: 1rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-font-size-4xl { font-size: 2.25rem!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-family-default {  } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-default {  } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-line-height-loose { line-height: 2!important; } .sw-width-12xs { width: 1rem!important; } .sw-percentage-width-l { width: 65%!important; } .sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-border-radius-none { border-radius: 0rem!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; }  
+.sw-border-top-style-solid { border-top-style: solid!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-f1f2f3 { border-top-color: #f1f2f3!important; } .sw-border-bottom-style-solid { border-bottom-style: solid!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-f1f2f3 { border-bottom-color: #f1f2f3!important; } .sw-border-right-style-solid { border-right-style: solid!important; } .sw-border-right-width-xs { border-right-width: 1px!important; } .sw-border-right-color-f1f2f3 { border-right-color: #f1f2f3!important; } .sw-border-left-style-solid { border-left-style: solid!important; } .sw-border-left-width-xs { border-left-width: 1px!important; } .sw-border-left-color-f1f2f3 { border-left-color: #f1f2f3!important; } .sw-font-size-2xl { font-size: 1.5rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-11xs { width: 2rem!important; } .sw-margin-right-3xs { margin-right: 1.25rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-6xs { margin-bottom: 0.5rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-font-size-4xl { font-size: 2.25rem!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-font-size-3xl { font-size: 1.875rem!important; } .sw-text-color-50a1ff { color: #50a1ff!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-text-color-929daf { color: #929daf!important; } .sw-text-color-926dde { color: #926dde!important; } .sw-text-color-ffba00 { color: #ffba00!important; } .sw-text-color-ff4954 { color: #ff4954!important; } .sw-text-color-3cd458 { color: #3cd458!important; }  
+.sw-text-color-000000 { color: #000000!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-width-11xs { width: 2rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-none { padding-bottom: 0rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-text-color-default {  } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-display-block { display: block!important; } .sw-margin-top-3xs { margin-top: 1.25rem!important; } .sw-margin-bottom-3xs { margin-bottom: 1.25rem!important; } .sw-border-top-style-solid { border-top-style: solid!important; } .sw-border-top-color-cccccc { border-top-color: #cccccc!important; } .sw-width-7xs { width: 6rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; }  
+
+        </style>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="css/css2.css" rel="stylesheet">
+        <style>
+            .made-with-softr {
+              position: fixed;
+              z-index: 9999999;
+              left: 20px;
+              bottom: 20px;
+            }
+
+            .made-with-softr a {
+              width: 125px;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+              border-radius: 4px;
+              z-index: 9999999;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 6px 8px;
+              color: #1f2b3f;
+              background: #ffffff;
+              box-sizing: content-box;
+              text-decoration: none;
+              font-family: 'Nunito Sans', sans-serif;
+            }
+
+            .made-with-softr a .made-with {
+              margin-left: 2px;
+            }
+
+            .made-with-softr a img {
+                width: 16px;
+            }
+
+            .made-with-softr .softr-word {
+              color: #3b85db;
+            }
+
+            .made-with-softr .dark-theme {
+              color: #ffffff;
+              background: #1f2b3f;
+            }
+
+            .made-with-softr .dark-theme .softr-word {
+              color: #ffb30b;
+            }
+        </style>
+
+        
+
+        
+
+        <style>
+ .sw-font-size-5xl {
+    font-size: 3rem;
+  }
+  .sw-font-size-4xl {
+    font-size: 2.25rem;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if($(window).width() < 768) {
+       $('h1.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('h2.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('div.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('p.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('span.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+    }
+  });
+</script>
+
+        
+
+        <script>window['is401Page'] = false; </script>
+
+        <script>
+            /** Bugfix on multiple ?recordId= issue **/
+            setInterval(function() {
+                $('section a').each(function() {
+                    const href = $(this).attr('href');
+                    if(href && href.includes('?recordId=')) {
+                        const countOfRecords = (href.match(/\?recordId=/g) || []).length;
+                        if(countOfRecords > 1) {
+                            const index = href.lastIndexOf('?recordId=');
+                            const cleanedHref = href.substring(0, index);
+                            $(this).attr('href', cleanedHref);
+                        }
+                    }
+                });
+            }, 1000);
+        </script>
+
+        <script>
+            /** Image lineup on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                function changeImageDirectionsOnMobile() {
+                    var rowsWithImages = $('.row.align-items-center').has('img').toArray();
+
+                    var rowsWithLeftSideImages = rowsWithImages.filter(row => {
+                        return $(row).children().first().children().first().prop("tagName") === 'IMG';
+                    });
+
+                    rowsWithLeftSideImages.forEach(row => {
+                        if($(window).width() <= 768) {
+                            row.classList.add('flex-column-reverse')
+                        }
+                    });
+                }
+                if($(window).width() <= 768) {
+                    changeImageDirectionsOnMobile();
+                }
+            });
+
+            /** BG Size on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                if($(window).width() <= 768) {
+                    var element = $('section.sw-background-size-auto, header.sw-background-size-auto');
+                    element.removeClass('sw-background-size-auto');
+                    element.css('background-size', 'cover');
+
+                    $('section.sw-background-attachment-fixed, header.sw-background-attachment-fixed').removeClass('sw-background-attachment-fixed');
+                }
+            });
+
+            /** Disable zoom on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+               if($(window).width() <= 768) {
+                   $('input.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('textarea.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('select.sw-font-size-s').removeClass('sw-font-size-s');
+               }
+           });
+
+        </script>
+    </head>
+
+    <body>
+
+        <div data-appid="7e591680-4857-425b-ba2a-075747b91ab2" data-pageid="47fa1b62-5701-40f1-ba81-114d86587b47" class="content"><header id="hero1" style="" class="hero4-d6cf40a3-7f71-4dae-a3e0-e0ee4149e3fe sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><div class="row align-items-center"><div class="col-lg-6 text-center"><img src="images/34805144-d746-41c0-ad8b-d414fbef09b4.png" class="sw-percentage-width-l sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="monkey swinging"></div><div class="col-lg-6 pt-5 pt-lg-0 text-center text-lg-left"><h2 class="sw-font-size-4xl sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">💸 Dash Mon[k]ey</h2><p class="sw-font-size-xl sw-text-color-default sw-font-family-montserrat sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-normal sw-line-height-loose ">Manage your web3 money in a web3 way!
+A casual interface into the not so casual world of DeFi</p><div class="d-flex justify-content-center justify-content-lg-start flex-wrap"><a target="_blank" href=""><img class="sw-width-12xs sw-margin-right-4xs sw-margin-top-4xs sw-display-inline-block" src="fonts/hero_appstore_icon.svg"></a><a target="_blank" href=""><img class="sw-width-12xs sw-margin-right-4xs sw-margin-top-4xs sw-display-inline-block" src="images/hero_playstore_icon.png"></a></div></div></div></div></header><section id="feature-grid1" style="" class="feature-grid5-19d4549d-626d-4116-b08d-73daebd13ce4 sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-center"><h2 class="sw-font-size-4xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">Planned Modules</h2></div></div><!-- Subheader --><div class="row"><div class="col-12 text-center"><p class="sw-font-size-xl sw-text-color-default sw-font-family-montserrat sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-normal sw-line-height-loose ">The following modules are planned to be completed over the course of 2021. Technical know will still be a must to use this project however. Docs and education modules are expected to be built over 2022.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4"><div class="media"><p class="sw-font-size-3xl sw-text-color-50a1ff sw-margin-right-3xs sw-line-height-compact"><i class="fas fa-fw fa-mobile-alt"></i></p><div class="media-body text-left"><h6 class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">Monitor Addresses, Contracts</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-wide ">Create lists of addresses or tokens to monitor for any state change such as price movement, transasction notificaiton, chain event, etc.</p></div></div></div><div class="col-md-4  pt-4 pb-4"><div class="media"><p class="sw-font-size-3xl sw-text-color-929daf sw-margin-right-3xs sw-line-height-compact"><i class="fas fa-fw fa-cog"></i></p><div class="media-body text-left"><h6 class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">Backtest Trading Recipes</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-wide ">Create and backtest trading recipes on popular tokens. Get detailed reports and deploy successful recipes to trade in the background.</p></div></div></div><div class="col-md-4  pt-4 pb-4"><div class="media"><p class="sw-font-size-3xl sw-text-color-926dde sw-margin-right-3xs sw-line-height-compact"><i class="fas fa-fw fa-pencil-alt"></i></p><div class="media-body text-left"><h6 class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">View and Analyse Charts</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-wide ">Load specific price charts for different tokens and get help analysing candle and trend patterns. Draw on them and save screenshots on IPFS.</p></div></div></div><div class="col-md-4  pt-4 pb-4"><div class="media"><p class="sw-font-size-3xl sw-text-color-ffba00 sw-margin-right-3xs sw-line-height-compact"><i class="fas fa-fw fa-cube"></i></p><div class="media-body text-left"><h6 class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">Deploy Bots, Manage Remotely</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-wide ">Deploy trading bots to trade on your behalf or deploy the whole project and manage via Discord. More friendly interfaces to be developed in 2022.</p></div></div></div><div class="col-md-4  pt-4 pb-4"><div class="media"><p class="sw-font-size-3xl sw-text-color-ff4954 sw-margin-right-3xs sw-line-height-compact"><i class="fas fa-fw fa-recycle"></i></p><div class="media-body text-left"><h6 class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">Open Source</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-wide ">The entire project is under a copyleft license and can be tinkered with, no problem! Every effort is made to make the code well documented.</p></div></div></div><div class="col-md-4  pt-4 pb-4"><div class="media"><p class="sw-font-size-3xl sw-text-color-3cd458 sw-margin-right-3xs sw-line-height-compact"><i class="far fa-comment-dots"></i></p><div class="media-body text-left"><h6 class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">Subscription Network</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-wide ">Mint trading recipes or token buckets and have others follow them for a fee. Or follow proficient investors and traders and watch your money grow*!</p></div></div></div></div></div></section><footer id="home_footer1" class="footer1-a47a6bdf-fa8e-4cb3-a9fd-34ee4afb4a7f sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-none sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><div class="row align-items-center"><div class="col-md-3 col-12 text-center text-md-left pb-md-2 pb-5"><a href="/"><img class="sw-width-7xs " src="images/2230eb56-6587-44c5-bb91-fe900fca634c.png" alt="Publish your designed things."></a></div><div class="col-md-9 col-12 pb-2"><div class="nav justify-content-center justify-content-md-end"><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/">Home</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/timeline">Timeline</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/features">Features</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="https://github.com/Dash-Monkey">Code</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/funding">Funding</a></div></div></div><div class="row"><div class="col-12"><hr class="sw-margin-top-3xs sw-margin-bottom-3xs sw-border-top-style-solid sw-border-top-width-xs sw-border-top-color-cccccc "></div></div><div class="row"><div class="col-7"><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-display-block"></small></div><div class="col-5"><div class="text-right"></div></div></div></div></footer></div>
+
+            <script>
+                (() => {
+                  function rgb2hex(orig) {
+                    var rgb = orig.replace(/\s/g, "").match(/^rgba?\((\d+),(\d+),(\d+)/i);
+                    return rgb && rgb.length === 4
+                      ? "#" +
+                          ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
+                      : orig;
+                  }
+
+                  function lightOrDark(color) {
+                    // Variables for red, green, blue values
+                    var r, g, b, hsp;
+
+                    // Check the format of the color, HEX or RGB?
+                    if (color.match(/^rgb/)) {
+                      // If RGB --> store the red, green, blue values in separate variables
+                      color = color.match(
+                        /^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
+                      );
+
+                      r = color[1];
+                      g = color[2];
+                      b = color[3];
+                    } else {
+                      // If hex --> Convert it to RGB: http://gist.github.com/983661
+                      color = +(
+                        "0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&")
+                      );
+
+                      r = color >> 16;
+                      g = (color >> 8) & 255;
+                      b = color & 255;
+                    }
+
+                    // HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+                    hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+
+                    // Using the HSP value, determine whether the color is light or dark
+                    if (hsp > 127.5) {
+                      return "light";
+                    } else {
+                      return "dark";
+                    }
+                  }
+
+                  function createBudgetWrapperDivEl() {
+                    const divEl = document.createElement("div");
+                    divEl.setAttribute("class", "made-with-softr");
+
+                    divEl.innerHTML = `
+                   <a href="https://www.softr.io/?utm_source=madewithbadge" target="_blank" title="Softr - Build a website, web app or portal on Airtable without code">
+                      <img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/softr_logo_icon_only.svg" alt="Softr - Build a website, web app or portal on Airtable without code">
+                      <span class="made-with">Made with</span>
+                      <span class="softr-word">Softr</span>
+                    </a>`;
+                    document.body.appendChild(divEl);
+                  }
+
+                  function isInCurrentSection(elTop, elBottom) {
+                    const innerHeight = window.innerHeight - 30;
+                    return elTop < innerHeight && elBottom > innerHeight;
+                  }
+
+                  function setRightTheme(sections, softrEl) {
+                    sections.forEach(item => {
+                      const elementTop = item.getBoundingClientRect().top;
+                      const elementBottom = item.getBoundingClientRect().bottom;
+
+                      if (isInCurrentSection(elementTop, elementBottom)) {
+                        const documentBodyColor = window
+                          .getComputedStyle(item)
+                          .getPropertyValue("background-color");
+
+                        const bgColor = lightOrDark(rgb2hex(documentBodyColor));
+
+                        if (bgColor === "light") {
+                          softrEl.classList.add("dark-theme");
+                        } else {
+                          softrEl.classList.remove("dark-theme");
+                        }
+                      }
+                    });
+                  }
+
+                  function init() {
+                    const madeWithSoftrEl = document.querySelector(".made-with-softr");
+
+                    if (madeWithSoftrEl) {
+                      madeWithSoftrEl.remove();
+                    }
+
+                    createBudgetWrapperDivEl();
+                    const headers = document.querySelectorAll("header");
+                    const sections = document.querySelectorAll("section");
+                    const footers = document.querySelectorAll("footer");
+                    const softrEl = document.querySelector(".made-with-softr a");
+                    const allSections = [...headers, ...sections, ...footers];
+                    setRightTheme(allSections, softrEl);
+
+                    document.addEventListener("scroll", () => {
+                      setRightTheme(allSections, softrEl);
+                    });
+                  }
+
+                  init();
+                  setInterval(() => init(), 50 * 1000);
+                })();
+            </script>
+
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            if(window.jQuery && window.jQuery.ajaxSetup) {
+                window.jQuery.ajaxSetup({
+                    beforeSend: function(xhr, settings) {
+                        if(settings && settings.url && settings.url.includes('/integrations/airtable/')){
+                            xhr.setRequestHeader('softr-page-id', '47fa1b62-5701-40f1-ba81-114d86587b47');
+                        }
+                    }
+                });
+            }
+
+            window['hero1'] = {}; 
+window['feature-grid1'] = {}; 
+window['home_footer1'] = {}; 
+
+        </script>
+
+        
+        
+
+        <script src="js/iframeResizer.contentWindow.js" crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            if(location.origin === 'https://www.softr.io') {
+              if (document.body.clientWidth <= 576) {
+                document.getElementsByClassName('made-with-softr')[0].style.display = 'none'
+              }
+            }
+          });
+        </script>
+    
+
+
+</body></html>

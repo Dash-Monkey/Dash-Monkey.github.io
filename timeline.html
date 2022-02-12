@@ -1,0 +1,496 @@
+<!DOCTYPE html><!-- This website/webapp was created in Softr. https://www.softr.io --><!-- Last Published: Tue, August 10 2021 23:46:55 --><html lang="en"><head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="twitter:title" content="Dash Mon[k]ey"><meta property="twitter:title" content="Dash Mon[k]ey"><meta property="og:title" content="Dash Mon[k]ey">
+        <meta name="twitter:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi."><meta property="twitter:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi."><meta property="og:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi.">
+        
+
+        <title>Dash Mon[k]ey</title>
+        <meta name="description" content="Manage your web3 money in a web3 way!">
+
+        <link rel="icon" type="image/x-icon" href="">
+
+        
+        
+        <link href="css/css_3.css" rel="stylesheet"><link href="css/css_1.css" rel="stylesheet"><link href="css/css.css" rel="stylesheet"><link href="css/css_2.css" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+
+        <style type="text/css">
+
+            html {
+                scroll-behavior: smooth;
+                font-size: 16px;
+                overflow-x: hidden;
+            }
+
+            body {
+              overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .navbar-brand img {
+                    max-width: 15rem!important;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+
+            p, h1, h2, h3, h4, h5, small { white-space: pre-line; }
+
+            @media screen and (max-width: 768px) {
+              input, select, textarea {
+                font-size: 16px !important;
+              }
+            }
+
+            h1.sw-font-family-default,
+            h2.sw-font-family-default {
+                font-family: "Comfortaa";
+            }
+
+            h1.sw-font-weight-default,
+            h2.sw-font-weight-default {
+                font-weight: 600;
+            }
+
+            h1.sw-text-color-default,
+            h2.sw-text-color-default {
+                color: #f9d3b4;
+            }
+
+            section.sw-font-family-default,
+            header.sw-font-family-default,
+            nav.sw-font-family-default,
+            footer.sw-font-family-default,
+            div.sw-font-family-default,
+            span.sw-font-family-default,
+            small.sw-font-family-default,
+            pre.sw-font-family-default,
+            p.sw-font-family-default,
+            b.sw-font-family-default,
+            li.sw-font-family-default,
+            ul.sw-font-family-default,
+            a.sw-font-family-default,
+            h3.sw-font-family-default,
+            h4.sw-font-family-default,
+            h5.sw-font-family-default,
+            h6.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            span.sw-font-weight-default,
+            li.sw-font-weight-default span,
+            small.sw-font-weight-default,
+            li.sw-font-weight-default small,
+            pre.sw-font-weight-default,
+            p.sw-font-weight-default,
+            h3.sw-font-weight-default,
+            h4.sw-font-weight-default,
+            h5.sw-font-weight-default,
+            h6.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            span.sw-text-color-default,
+            li.sw-text-color-default span,
+            small.sw-text-color-default,
+            li.sw-text-color-default small,
+            pre.sw-text-color-default,
+            p.sw-text-color-default,
+            div.sw-text-color-default,
+            h3.sw-text-color-default,
+            h4.sw-text-color-default,
+            h5.sw-text-color-default,
+            h6.sw-text-color-default {
+                color: #eae7e5;
+            }
+
+            input.sw-font-family-default,
+            textarea.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            input.sw-font-weight-default,
+            textarea.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-family: "Open Sans";
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-weight: 300;
+            }
+
+            .sw-text-color-default[data-element='button'] {
+                color: #ffffff;
+            }
+
+            .sw-background-color-default[data-element='button'] {
+                background-color: #15181a;
+            }
+
+            .sw-border-radius-default[data-element='button'] {
+                border-radius: .25rem;
+            }
+
+            .sw-font-size-m { font-size: 1rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-border-radius-default {  } .sw-background-color-default {  } .sw-padding-left-xs { padding-left: 2rem!important; } .sw-padding-right-xs { padding-right: 2rem!important; } .sw-padding-top-5xs { padding-top: 0.75rem!important; } .sw-padding-bottom-5xs { padding-bottom: 0.75rem!important; } .sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-text-decoration-no-underline { text-decoration: none!important; } @media (hover: hover) { .hover\:sw-text-decoration-no-underline:hover { text-decoration: none!important; } } @media (hover: hover) { .hover\:sw-box-shadow-m:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)!important; } } .sw-margin-bottom-6xs { margin-bottom: 0.5rem!important; } .sw-margin-right-5xs { margin-right: 0.75rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-font-size-5xl { font-size: 3rem!important; } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-line-height-loose { line-height: 2!important; } .sw-percentage-width-l { width: 65%!important; } .sw-border-radius-none { border-radius: 0rem!important; } .sw-background-color-ffffff { background-color: #ffffff!important; } .sw-font-size-s { font-size: 0.875rem!important; } .sw-border-radius-m { border-radius: 0.25rem!important; } .sw-width-2xs { width: 16rem!important; } .sw-border-style-solid { border-style: solid!important; } .sw-box-shadow-s { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)!important; } .sw-padding-left-5xs { padding-left: 0.75rem!important; } .sw-outline-none { outline: none!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-padding-bottom-none { padding-bottom: 0rem!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; }  #hero1 .sw-btn-success {  background: #22bc66 !important;  color: #fff !important; }   #hero1 .sw-btn-success .fa-check {  display: inline-block !important;  color: #fff !important;  position: relative !important;  left: 0.5rem !important; }  #hero1 .sw-input-invalid {  border: 2px solid red !important; }  #hero1 .sw-btn-spinner {  width: 1rem !important;  height: 1rem !important;  margin-left: 0.5rem !important; }  #hero1 #sw-form-success-message {  padding-left: 0;  padding-right: 0;     }
+.sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-border-radius-none { border-radius: 0rem!important; } .sw-width-8xs { width: 5rem!important; } .sw-display-block { display: block!important; } .sw-text-decoration-no-underline { text-decoration: none!important; } @media (hover: hover) { .hover\:sw-text-decoration-no-underline:hover { text-decoration: none!important; } } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-size-5xl { font-size: 3rem!important; } .sw-font-family-default {  } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-text-color-333333 { color: #333333!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-font-weight-normal { font-weight: 400!important; } .sw-padding-bottom-2xs { padding-bottom: 1.5rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-line-height-loose { line-height: 2!important; }  #partner1 .slick-track {  display: flex;  align-items: center; } #partner1 .slick-slide {      display: flex;      align-items: center;      justify-content: center;     } 
+.sw-percentage-width-full { width: 100%!important; } .sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-border-radius-none { border-radius: 0rem!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-6xs { margin-bottom: 0.5rem!important; } .sw-margin-top-none { margin-top: 0rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-background-color-2a2a2a { background-color: #2a2a2a!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-font-size-5xl { font-size: 3rem!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-padding-bottom-m { padding-bottom: 3rem!important; } .sw-font-size-2xl { font-size: 1.5rem!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-font-family-lato { font-family: "Lato"!important; }  #feature-grid2 .feature { position: relative; margin-bottom: 26px;     } #feature-grid2 .feature img { object-fit: contain;     } #feature-grid2 .line {      width: 1px;      height: 100%;      background: #dedede;      position: absolute;      left: 50%;     } #feature-grid2 .line small {      font-weight: 400;      border-radius: 50%;      border: 1px solid #dedede;      width: 26px;      height: 26px;      display: inline-block;      text-align: center;      line-height: 23px;      font-size: 18px;      position: absolute;      top: -26px;      left: -13px;      color: #60a2f7;     } @media (max-width: 767px) {  #feature-grid2 .feature {       flex-direction: column-reverse!important;      }  #feature-grid2 .line {      left: -15px;     } } @media (max-width: 600px) {  #feature-grid2 .feature {       flex-direction: column-reverse!important;      } #feature-grid2 .line {      left: 15px;     } } 
+.sw-text-color-000000 { color: #000000!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-width-11xs { width: 2rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-none { padding-bottom: 0rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-text-color-default {  } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-display-block { display: block!important; } .sw-margin-top-3xs { margin-top: 1.25rem!important; } .sw-margin-bottom-3xs { margin-bottom: 1.25rem!important; } .sw-border-top-style-solid { border-top-style: solid!important; } .sw-border-top-color-cccccc { border-top-color: #cccccc!important; } .sw-width-7xs { width: 6rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; }  
+        </style>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="css/css2.css" rel="stylesheet">
+        <style>
+            .made-with-softr {
+              position: fixed;
+              z-index: 9999999;
+              left: 20px;
+              bottom: 20px;
+            }
+
+            .made-with-softr a {
+              width: 125px;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+              border-radius: 4px;
+              z-index: 9999999;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 6px 8px;
+              color: #1f2b3f;
+              background: #ffffff;
+              box-sizing: content-box;
+              text-decoration: none;
+              font-family: 'Nunito Sans', sans-serif;
+            }
+
+            .made-with-softr a .made-with {
+              margin-left: 2px;
+            }
+
+            .made-with-softr a img {
+                width: 16px;
+            }
+
+            .made-with-softr .softr-word {
+              color: #3b85db;
+            }
+
+            .made-with-softr .dark-theme {
+              color: #ffffff;
+              background: #1f2b3f;
+            }
+
+            .made-with-softr .dark-theme .softr-word {
+              color: #ffb30b;
+            }
+        </style>
+
+        
+
+        
+
+        <style>
+ .sw-font-size-5xl {
+    font-size: 3rem;
+  }
+  .sw-font-size-4xl {
+    font-size: 2.25rem;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if($(window).width() < 768) {
+       $('h1.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('h2.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('div.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('p.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('span.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+    }
+  });
+</script>
+
+        
+
+        <script>window['is401Page'] = false; </script>
+
+        <script>
+            /** Bugfix on multiple ?recordId= issue **/
+            setInterval(function() {
+                $('section a').each(function() {
+                    const href = $(this).attr('href');
+                    if(href && href.includes('?recordId=')) {
+                        const countOfRecords = (href.match(/\?recordId=/g) || []).length;
+                        if(countOfRecords > 1) {
+                            const index = href.lastIndexOf('?recordId=');
+                            const cleanedHref = href.substring(0, index);
+                            $(this).attr('href', cleanedHref);
+                        }
+                    }
+                });
+            }, 1000);
+        </script>
+
+        <script>
+            /** Image lineup on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                function changeImageDirectionsOnMobile() {
+                    var rowsWithImages = $('.row.align-items-center').has('img').toArray();
+
+                    var rowsWithLeftSideImages = rowsWithImages.filter(row => {
+                        return $(row).children().first().children().first().prop("tagName") === 'IMG';
+                    });
+
+                    rowsWithLeftSideImages.forEach(row => {
+                        if($(window).width() <= 768) {
+                            row.classList.add('flex-column-reverse')
+                        }
+                    });
+                }
+                if($(window).width() <= 768) {
+                    changeImageDirectionsOnMobile();
+                }
+            });
+
+            /** BG Size on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                if($(window).width() <= 768) {
+                    var element = $('section.sw-background-size-auto, header.sw-background-size-auto');
+                    element.removeClass('sw-background-size-auto');
+                    element.css('background-size', 'cover');
+
+                    $('section.sw-background-attachment-fixed, header.sw-background-attachment-fixed').removeClass('sw-background-attachment-fixed');
+                }
+            });
+
+            /** Disable zoom on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+               if($(window).width() <= 768) {
+                   $('input.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('textarea.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('select.sw-font-size-s').removeClass('sw-font-size-s');
+               }
+           });
+
+        </script>
+    </head>
+
+    <body>
+
+        <div data-appid="7e591680-4857-425b-ba2a-075747b91ab2" data-pageid="0f93544b-19f3-41e4-9f5e-0ac8a8b31825" class="content"><header id="hero1" style="" class="hero2-a338c5b0-9f10-41ef-90a3-db263fac308f sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><div class="row align-items-center"><div class="col-lg-6 text-center"><img src="images/601c2bba-4fd6-4800-92fe-7853b4f06c42.png" class="sw-percentage-width-l sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="monkey swinging"></div><div class="col-lg-6 pt-5 pt-lg-0 text-center text-lg-left"><h1 class="sw-font-size-5xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">Development Timeline</h1><p class="sw-font-size-l sw-text-color-default sw-font-family-montserrat sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">Dash Mon[k]ey is designed to be deployed remotely and interacted with via discord and a webapp. The Proof of Concepts will be built in hackathons and releases via grant fundings.</p><div class="d-flex justify-content-center justify-content-lg-start flex-wrap"><input id="sw-email-capture-email-input" type="text" class="sw-background-color-ffffff sw-font-size-s sw-text-color-default sw-font-family-default sw-border-radius-m sw-width-2xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-solid sw-border-width-xs sw-border-color-000000 sw-box-shadow-s sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block sw-padding-left-5xs sw-outline-none" placeholder="Your email"><a data-element="button" id="sw-email-capture-submit-btn" class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-semibold sw-border-radius-default sw-background-color-default sw-padding-left-xs sw-padding-right-xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-letter-spacing-normal sw-text-decoration-no-underline hover:sw-text-decoration-no-underline hover:sw-box-shadow-m sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block" href="javascript:void(0);">Stay updated<div class="spinner-border sw-btn-spinner d-none text-light" role="status"><span class="sr-only">Loading...</span></div><i class="fa fa-fw fa-check d-none" aria-hidden="true"></i></a><p id="sw-form-success-message" data-success-action-state="OPEN_PAGE" data-success-action-path="/timeline" class="col-12 d-none sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-none sw-letter-spacing-normal ">Thank you for subscribing!</p></div></div></div></div></header><section id="partner1" class="partner2-feeefc3d-2c04-4ad6-8436-03096168edb6 sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><div class="row"><div class="col-12 text-center"><h2 class="sw-text-color-000000 sw-font-size-5xl sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">Projects used by Dash Mon[k]ey</h2><p class="sw-text-color-333333 sw-font-size-xl sw-font-family-montserrat sw-font-weight-normal sw-padding-top-none sw-padding-bottom-2xs sw-letter-spacing-wide sw-line-height-loose">Dash Mon[k]ey would not be possible if not for the following open source web3 projects. If you are a developer, consider looking into these projects. If you are from one of these projects, please consider funding the Gitcoin grant.</p></div></div><div class="row text-center pt-5"><div class="col-12"><div id="partner-slider" class="slick-slider" style="overflow: hidden;"><div><a href="https://docs.perp.fi/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="images/f466752b-630e-4190-bc64-dc3560f448a5.png" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://docs.unmarshal.io/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/3ec29e87-280c-4d5f-be87-d9d3f66d06a4.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://www.covalenthq.com/docs/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="images/db491d62-6a35-4234-84dd-abfde43f2153.png" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://docs.uniswap.org/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/f386f641-fdc5-47c0-9f39-a6730568235f.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://sdk-docs.polygon.technology/docs/overview/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/4f85c94b-d09a-444c-b565-a31b9b3abbb8.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://thegraph.com/docs/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/d6ec8df0-4d2b-4c13-8161-d5a9c4e3a1a7.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://docs.superfluid.finance/superfluid/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="images/bbfd2c21-4f38-4ba0-8def-eed4b5c1eeff.png" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://filecoin.io/build/#intro" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/cbb13786-358e-4868-b5c7-7b6044308a68.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://docs.1inch.io/api/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/c2ed59ec-7934-4347-aec3-05ae4d20d892.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div><div><a href="https://docs.chain.link/" target="" class=" sw-display-block sw-text-decoration-no-underline hover:sw-text-decoration-no-underline" rel="nofollow noreferrer noopener"><img src="fonts/9d4f8688-98fe-4dd9-add5-99f953e5de29.svg" class="sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none sw-width-8xs "></a></div></div></div></div></div></section><section id="feature-grid2" class="feature-grid9-aaa6ca09-46f6-4831-af47-addd5a857d1d sw-background-color-2a2a2a sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><header class="text-center"><h2 class="sw-font-size-5xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">Feature Priority</h2><p class="sw-font-size-xl sw-text-color-default sw-font-family-montserrat sw-font-weight-default sw-padding-top-none sw-padding-bottom-m sw-letter-spacing-normal sw-line-height-loose ">Ideally, the following features should be implemented, enough at least for a dev release, by the end of the year. The following list details the features in rough priority, ie, the order of development.</p></header><div class="row align-items-center"><div class="col-lg-12 text-center text-lg-left pt-5 pt-lg-0"><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Address Lists</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Create address lists to track balances and be notified of transactions. Or store your keys securely on a self hosted device [read: Raspberry Pi] and have your bots trade for you*!</p></div><div class="line"><small class="num">1</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="fonts/aefe02d7-4392-434e-a655-6652ca6900e7.svg" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Market Notifications</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Set up support and resistance levels and get price notifications. Or set up conditional triggers based on candle sticks or market indicators and be notified of market movements.</p></div><div class="line"><small class="num">2</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Discord Bot</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Interact with the deployed application remotely via discord. Receive custom notifications via the bot and make decisions on the go*!</p></div><div class="line"><small class="num">3</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Backtesting Engine</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Test your trading recipes to gain confidence in them. However, remember the past does not always predict the future.</p></div><div class="line"><small class="num">4</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="fonts/5fcb04c3-d44a-4e38-9352-0b8cc49f151f.svg" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Simulate recipes</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Deploy your backtested recipes and let (self hosted) bots trade on your behalf on the exchange of your choice. Take the emotion out of your trades!</p></div><div class="line"><small class="num">5</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="fonts/a233ef67-2f81-4e68-b644-ab85a4701a5a.svg" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Mint and Subscribe</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Mint your trading recipes as NFTs and let other traders subscribe to them. Release them as public tokens out of the goodness of your heart or private tokens to earn some fees.</p></div><div class="line"><small class="num">6</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Create ratio-ed buckets</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Recurring buys and dollar cost averaging —�&nbsp;indispensable tools for the smart trader. Create diversified buckets and invest regularly in predefined ratios of assets.</p></div><div class="line"><small class="num">7</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Mint and Subscribe</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Mint your bucket as a NFT and attempt to beat the market! Same as recipes, release them as public tokens out of the goodness of your heart or private tokens to earn some fees.</p></div><div class="line"><small class="num">8</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Grid Trading</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Grid trading is really cool — set up grid depth and profit margin, and open positions in both directions at the current market price. Reach a gird level in either direction and exit with profit. Now, earn on sideway trends as well!</p></div><div class="line"><small class="num">9</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">ENS Profiles</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Decentralisation the core of web3, and Dash Mon[k]ey. So, every user gets a decentralised ENS profile hosted on IPFS. Anyone may find your minted tokens and subscribe, making you money* even if you forget to! Just remember your keys!</p></div><div class="line"><small class="num">10</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Scalper Bot</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">See the volatility in the market? Would it not be nice if we could sell at every 10% gain and buy at every 10% drop? But who'd stick to the screen as much? This bot does that for you!</p></div><div class="line"><small class="num">11</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Stream Trading</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Dollar cost averaging on steroids. Purchase assets over a timeframe and average out your buy prices.</p></div><div class="line"><small class="num">12</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Arbitrage Bot</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">So many exchanges, so many prices. This bot aims to buy low and sell high. On different platforms.</p></div><div class="line"><small class="num">13</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature flex-row-reverse"><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">Flash Loan Support</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Similar to arbitrage,. but with DeFi staking and liquidity products. The idea is to take a huge loan (with no collateral) and return it before the block is processed. Now, instantly payback the loan with a higher interest and take a loan with a lower interest rate.</p></div><div class="line"><small class="num">14</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div><div class="row feature "><div class="col-md-6 pt-4 pb-4 pr-4 pl-4 text-box"><h6 class="sw-font-size-2xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-6xs sw-margin-top-none">React Application on ENS</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Finally, develop a decentralised website on ReactJS so users may use injected web3 wallets and use Dash Mon[k]ey without having to storing private keys.</p></div><div class="line"><small class="num">15</small></div><div class="col-md-6 pt-4 pb-4 pr-4 pl-4"><img src="images/feature_grid9_pic0.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none  mx-auto d-block" alt="Our awesome features"></div></div></div></div></div></section><footer id="home_footer1" class="footer1-a47a6bdf-fa8e-4cb3-a9fd-34ee4afb4a7f sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-none sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><div class="row align-items-center"><div class="col-md-3 col-12 text-center text-md-left pb-md-2 pb-5"><a href="/"><img class="sw-width-7xs " src="images/2230eb56-6587-44c5-bb91-fe900fca634c.png" alt="Publish your designed things."></a></div><div class="col-md-9 col-12 pb-2"><div class="nav justify-content-center justify-content-md-end"><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/">Home</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/timeline">Timeline</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/features">Features</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="https://github.com/Dash-Monkey">Code</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/funding">Funding</a></div></div></div><div class="row"><div class="col-12"><hr class="sw-margin-top-3xs sw-margin-bottom-3xs sw-border-top-style-solid sw-border-top-width-xs sw-border-top-color-cccccc "></div></div><div class="row"><div class="col-7"><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-display-block"></small></div><div class="col-5"><div class="text-right"></div></div></div></div></footer></div>
+
+            <script>
+                (() => {
+                  function rgb2hex(orig) {
+                    var rgb = orig.replace(/\s/g, "").match(/^rgba?\((\d+),(\d+),(\d+)/i);
+                    return rgb && rgb.length === 4
+                      ? "#" +
+                          ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
+                      : orig;
+                  }
+
+                  function lightOrDark(color) {
+                    // Variables for red, green, blue values
+                    var r, g, b, hsp;
+
+                    // Check the format of the color, HEX or RGB?
+                    if (color.match(/^rgb/)) {
+                      // If RGB --> store the red, green, blue values in separate variables
+                      color = color.match(
+                        /^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
+                      );
+
+                      r = color[1];
+                      g = color[2];
+                      b = color[3];
+                    } else {
+                      // If hex --> Convert it to RGB: http://gist.github.com/983661
+                      color = +(
+                        "0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&")
+                      );
+
+                      r = color >> 16;
+                      g = (color >> 8) & 255;
+                      b = color & 255;
+                    }
+
+                    // HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+                    hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+
+                    // Using the HSP value, determine whether the color is light or dark
+                    if (hsp > 127.5) {
+                      return "light";
+                    } else {
+                      return "dark";
+                    }
+                  }
+
+                  function createBudgetWrapperDivEl() {
+                    const divEl = document.createElement("div");
+                    divEl.setAttribute("class", "made-with-softr");
+
+                    divEl.innerHTML = `
+                   <a href="https://www.softr.io/?utm_source=madewithbadge" target="_blank" title="Softr - Build a website, web app or portal on Airtable without code">
+                      <img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/softr_logo_icon_only.svg" alt="Softr - Build a website, web app or portal on Airtable without code">
+                      <span class="made-with">Made with</span>
+                      <span class="softr-word">Softr</span>
+                    </a>`;
+                    document.body.appendChild(divEl);
+                  }
+
+                  function isInCurrentSection(elTop, elBottom) {
+                    const innerHeight = window.innerHeight - 30;
+                    return elTop < innerHeight && elBottom > innerHeight;
+                  }
+
+                  function setRightTheme(sections, softrEl) {
+                    sections.forEach(item => {
+                      const elementTop = item.getBoundingClientRect().top;
+                      const elementBottom = item.getBoundingClientRect().bottom;
+
+                      if (isInCurrentSection(elementTop, elementBottom)) {
+                        const documentBodyColor = window
+                          .getComputedStyle(item)
+                          .getPropertyValue("background-color");
+
+                        const bgColor = lightOrDark(rgb2hex(documentBodyColor));
+
+                        if (bgColor === "light") {
+                          softrEl.classList.add("dark-theme");
+                        } else {
+                          softrEl.classList.remove("dark-theme");
+                        }
+                      }
+                    });
+                  }
+
+                  function init() {
+                    const madeWithSoftrEl = document.querySelector(".made-with-softr");
+
+                    if (madeWithSoftrEl) {
+                      madeWithSoftrEl.remove();
+                    }
+
+                    createBudgetWrapperDivEl();
+                    const headers = document.querySelectorAll("header");
+                    const sections = document.querySelectorAll("section");
+                    const footers = document.querySelectorAll("footer");
+                    const softrEl = document.querySelector(".made-with-softr a");
+                    const allSections = [...headers, ...sections, ...footers];
+                    setRightTheme(allSections, softrEl);
+
+                    document.addEventListener("scroll", () => {
+                      setRightTheme(allSections, softrEl);
+                    });
+                  }
+
+                  init();
+                  setInterval(() => init(), 50 * 1000);
+                })();
+            </script>
+
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            if(window.jQuery && window.jQuery.ajaxSetup) {
+                window.jQuery.ajaxSetup({
+                    beforeSend: function(xhr, settings) {
+                        if(settings && settings.url && settings.url.includes('/integrations/airtable/')){
+                            xhr.setRequestHeader('softr-page-id', '0f93544b-19f3-41e4-9f5e-0ac8a8b31825');
+                        }
+                    }
+                });
+            }
+
+            window['hero1'] = {}; ;(function () {   var emailInputSelector = '#hero1 #sw-email-capture-email-input';  var submitButtonSelector = '#hero1 #sw-email-capture-submit-btn';  var zapierWebhookUrl = '';  var integromatWebhookUrl = '';  var mailchimpUrl = '';  var mailerliteUrl = '';  var parsedMailchimpUrl = parseUrl(mailchimpUrl.replace(/&amp;/g, '&'));  var destinationEmail = 'palash.agarwal.96@gmail.com';   const formSuccessMessageEl = '#hero1 #sw-form-success-message';  const actionState = $(formSuccessMessageEl).attr('data-success-action-state');  const actionPath = $(formSuccessMessageEl).attr('data-success-action-path');   if (isInStudio() && isShowMessageSelected()) {   $(formSuccessMessageEl).removeClass('d-none');  } else {   $(formSuccessMessageEl).addClass('d-none');  }   function isShowMessageSelected() {   return actionState === "SHOW_MESSAGE";  }   function isEmail(email) {   var emailReg = /^([\w-\.\+]+@([\w-]+\.)+[\w-]{2,12})?$/;   return email && emailReg.test(email);  }   function parseUrl(url) {   var parser = document.createElement('a'),    searchObject = {},    queries, split, i;    parser.href = url;    queries = parser.search.replace(/^\?/, '').split('&');   for (i = 0; i < queries.length; i++) {    split = queries[i].split('=');    searchObject[split[0]] = split[1];   }   return {    protocol: parser.protocol,    host: parser.host,    hostname: parser.hostname,    port: parser.port,    pathname: parser.pathname,    search: parser.search,    searchObject: searchObject,    hash: parser.hash   };  }   function collectEmailInMailchimp(email, parsedMailchimpUrl, successCallback, errorCallback) {   $.ajax({    url: 'https://' + parsedMailchimpUrl.hostname + '/subscribe/post-json?u=' + parsedMailchimpUrl.searchObject.u + '&id=' + parsedMailchimpUrl.searchObject.id + '&c=?',    type: 'GET',    data: 'EMAIL=' + email,    dataType: 'jsonp',    contentType: 'application/json; charset=utf-8',    success: function (data) {     successCallback();    },    error: function (error) {     console.log(error);     errorCallback();    }    });  }   function collectEmailInMailerlite(email, mailerliteUrl, successCallback, errorCallback) {   var data = 'fields[email]=' + encodeURIComponent(email) + '&ml-submit=1';   $.ajax({    url: mailerliteUrl,    type: 'POST',    data: data,    contentType: 'application/x-www-form-urlencoded',    success: function (data) {     successCallback();    },    error: function (error) {     console.log(error);     errorCallback();    }    });  }   function forwardToEmail(email, destinationEmail, successCallback, errorCallback) {   var payload = {"attributes": {'EMAIL': email, 'PAGE_AND_SECTION': window.location.href + '#hero1'}};   $.ajax({    url: window.location.origin + '/api/v1/applications/forms/form-to-email/' + destinationEmail,    type: 'POST',    data: JSON.stringify(payload),    contentType: 'application/json; charset=utf-8',    success: function (data) {     console.log(data);     successCallback();    },    error: function (error) {     console.log(error);     errorCallback();    }    });  }   function sendToZapierWebhook(email, zapierWebhookUrl, successCallback, errorCallback) {   var payload = {'EMAIL': email, 'PAGE_AND_SECTION': window.location.href + '#hero1'};   $.ajax({    url: zapierWebhookUrl,    type: 'POST',    data: JSON.stringify(payload),    success: function (data) {     console.log(data);     successCallback();    },    error: function (error) {     console.log(error);     errorCallback();    }    });  }   function sendToIntegromatWebhook(email, integromatWebhookUrl, successCallback, errorCallback) {   var payload = {'EMAIL': email, 'PAGE_AND_SECTION': window.location.href + '#hero1'};   $.ajax({    url: integromatWebhookUrl,    type: 'POST',    data: JSON.stringify(payload),    contentType: 'application/json; charset=utf-8',    success: function (data) {     console.log(data);     successCallback();    },    error: function (error) {     console.log(error);     errorCallback();    }    });  }   function handleSuccess() {   $(submitButtonSelector + ' .sw-btn-spinner').addClass('d-none');   $(submitButtonSelector).addClass('sw-btn-success');    setTimeout(function () {    $(submitButtonSelector).removeClass('sw-btn-success');    $(emailInputSelector).val('');    performAfterSuccessAction();   }, 1000);   }   function performAfterSuccessAction() {   if (isShowMessageSelected()) {    $(formSuccessMessageEl).removeClass('d-none');    setTimeout(() => {     $(formSuccessMessageEl).addClass('d-none');    }, 60 * 1000);   } else if (actionState === "OPEN_PAGE") {    if (actionPath !== 'NO_ACTION') {     window.location.href = actionPath;    }   }  }   function handleFailure() {   $(emailInputSelector).addClass('sw-input-invalid');  }   $(submitButtonSelector).click(function (e) {   e.preventDefault();    var email = $(emailInputSelector).val().trim();    /* validate the input */   $(emailInputSelector).removeClass('sw-input-invalid');   if (!isEmail(email)) {    $(emailInputSelector).addClass('sw-input-invalid');    return;   }    if (!mailchimpUrl && !mailerliteUrl && !destinationEmail && !zapierWebhookUrl && !integromatWebhookUrl) {    return;   }    $(submitButtonSelector + ' .sw-btn-spinner').removeClass('d-none');    if (mailchimpUrl) {    collectEmailInMailchimp(email, parsedMailchimpUrl, handleSuccess, handleFailure);   } else if (mailerliteUrl) {    collectEmailInMailerlite(email, mailerliteUrl, handleSuccess, handleFailure);   } else if (zapierWebhookUrl) {    sendToZapierWebhook(email, zapierWebhookUrl, handleSuccess, handleFailure);   } else if (integromatWebhookUrl) {    sendToIntegromatWebhook(email, integromatWebhookUrl, handleSuccess, handleFailure);   } else {    forwardToEmail(email, destinationEmail, handleSuccess, handleFailure);   }  });   (function adjustButtonWidth() {   setTimeout(function () {    var emailInput = $('#hero1 #sw-email-capture-email-input');    var submitButton = $('#hero1 #sw-email-capture-submit-btn');     var inputTopPos = emailInput.position().top;    var buttonTopPos = submitButton.position().top;     console.log(emailInput.position());    console.log(submitButton.position());     if (buttonTopPos - inputTopPos < 10) {     return;    }     var width = emailInput.outerWidth();    submitButton.css({'width': width});   }, 10);  })();   function isInStudio() {   return window.location.href.startsWith('http://localhost:') ||    window.location.href.startsWith('https://studio-staging.softr.io/') ||    window.location.href.startsWith('https://studio.softr.io/')  }  })(); 
+window['partner1'] = {}; ;(function () {   appendStyle('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');  appendScript('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', startSlider);  startSlider();   function appendScript(filepath, callback) {   if ($('head script[src="' + filepath + '"]').length > 0)    return;   var script = document.createElement('script');   if(callback) {    script.onload = callback;   }   script.async = true;   script.type = 'text/javascript';   script.src = filepath;   document.head.appendChild(script);  }   function appendStyle(filepath) {   if ($('head link[href="' + filepath + '"]').length > 0)    return;    var ele = document.createElement('link');   ele.setAttribute("type", "text/css");   ele.setAttribute("rel", "Stylesheet");   ele.setAttribute("href", filepath);   $('head').append(ele);  }    var isSlickStarted = false;  function startSlider(){   setTimeout(function () {    if($('#partner1 .slick-slider').slick) {     if(isSlickStarted) {      return;     }     isSlickStarted = true;     $('#partner1 .slick-slider').slick({      slidesToShow: 4,      slidesToScroll: 1,      arrows: false,      dots: false,      autoplay: true,      autoplaySpeed: 2000,      centerMode:true,      responsive: [       {        breakpoint: 500,        settings: {        slidesToShow: 1,        }       },       {        breakpoint: 767,        settings: {        slidesToShow: 2        }       },       {        breakpoint: 991,        settings: {         slidesToShow: 3        }       },      ]     });    }   }, 300);  }  $(window).on('resize', function() {   $('#partner1 .slick-slider').slick('resize');  }); })(); 
+window['feature-grid2'] = {}; 
+
+        </script>
+
+        
+        
+
+        <script src="js/iframeResizer.contentWindow.js" crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            if(location.origin === 'https://www.softr.io') {
+              if (document.body.clientWidth <= 576) {
+                document.getElementsByClassName('made-with-softr')[0].style.display = 'none'
+              }
+            }
+          });
+        </script>
+    
+
+
+</body></html>

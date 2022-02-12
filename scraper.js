@@ -1,11 +1,11 @@
-const scrape = require('website-scraper');
+import scrape from 'website-scraper';
 
 let options = {
     urls: [
       'https://dash-monkey.softr.app/',
-      'https://dash-monkey.softr.app/timeline',
-      'https://dash-monkey.softr.app/features',
-      'https://dash-monkey.softr.app/funding'
+      {url: 'https://dash-monkey.softr.app/timeline', filename: 'timeline.html'},
+      {url: 'https://dash-monkey.softr.app/features', filename: 'features.html'},
+      {url: 'https://dash-monkey.softr.app/funding', filename: 'funding.html'},
     ],
     directory: './softr-scrape',
 };

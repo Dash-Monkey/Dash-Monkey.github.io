@@ -1,0 +1,504 @@
+<!DOCTYPE html><!-- This website/webapp was created in Softr. https://www.softr.io --><!-- Last Published: Tue, August 10 2021 23:46:55 --><html lang="en"><head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="twitter:title" content="Dash Mon[k]ey"><meta property="twitter:title" content="Dash Mon[k]ey"><meta property="og:title" content="Dash Mon[k]ey">
+        <meta name="twitter:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi."><meta property="twitter:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi."><meta property="og:description" content="Manage your web3 money in a web3 way! A casual interface into the not so casual world of DeFi.">
+        
+
+        <title>Dash Mon[k]ey</title>
+        <meta name="description" content="Manage your web3 money in a web3 way!">
+
+        <link rel="icon" type="image/x-icon" href="">
+
+        
+        
+        <link href="css/css_3.css" rel="stylesheet"><link href="css/css_1.css" rel="stylesheet"><link href="css/css.css" rel="stylesheet"><link href="css/css_2.css" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/all.css" rel="stylesheet">
+
+        <style type="text/css">
+
+            html {
+                scroll-behavior: smooth;
+                font-size: 16px;
+                overflow-x: hidden;
+            }
+
+            body {
+              overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .navbar-brand img {
+                    max-width: 15rem!important;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+
+            p, h1, h2, h3, h4, h5, small { white-space: pre-line; }
+
+            @media screen and (max-width: 768px) {
+              input, select, textarea {
+                font-size: 16px !important;
+              }
+            }
+
+            h1.sw-font-family-default,
+            h2.sw-font-family-default {
+                font-family: "Comfortaa";
+            }
+
+            h1.sw-font-weight-default,
+            h2.sw-font-weight-default {
+                font-weight: 600;
+            }
+
+            h1.sw-text-color-default,
+            h2.sw-text-color-default {
+                color: #f9d3b4;
+            }
+
+            section.sw-font-family-default,
+            header.sw-font-family-default,
+            nav.sw-font-family-default,
+            footer.sw-font-family-default,
+            div.sw-font-family-default,
+            span.sw-font-family-default,
+            small.sw-font-family-default,
+            pre.sw-font-family-default,
+            p.sw-font-family-default,
+            b.sw-font-family-default,
+            li.sw-font-family-default,
+            ul.sw-font-family-default,
+            a.sw-font-family-default,
+            h3.sw-font-family-default,
+            h4.sw-font-family-default,
+            h5.sw-font-family-default,
+            h6.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            span.sw-font-weight-default,
+            li.sw-font-weight-default span,
+            small.sw-font-weight-default,
+            li.sw-font-weight-default small,
+            pre.sw-font-weight-default,
+            p.sw-font-weight-default,
+            h3.sw-font-weight-default,
+            h4.sw-font-weight-default,
+            h5.sw-font-weight-default,
+            h6.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            span.sw-text-color-default,
+            li.sw-text-color-default span,
+            small.sw-text-color-default,
+            li.sw-text-color-default small,
+            pre.sw-text-color-default,
+            p.sw-text-color-default,
+            div.sw-text-color-default,
+            h3.sw-text-color-default,
+            h4.sw-text-color-default,
+            h5.sw-text-color-default,
+            h6.sw-text-color-default {
+                color: #eae7e5;
+            }
+
+            input.sw-font-family-default,
+            textarea.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            input.sw-font-weight-default,
+            textarea.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-family: "Open Sans";
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-weight: 300;
+            }
+
+            .sw-text-color-default[data-element='button'] {
+                color: #ffffff;
+            }
+
+            .sw-background-color-default[data-element='button'] {
+                background-color: #15181a;
+            }
+
+            .sw-border-radius-default[data-element='button'] {
+                border-radius: .25rem;
+            }
+
+            .sw-font-size-m { font-size: 1rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-border-radius-full { border-radius: 9999rem!important; } .sw-background-color-default {  } .sw-padding-left-s { padding-left: 2.5rem!important; } .sw-padding-right-s { padding-right: 2.5rem!important; } .sw-padding-top-5xs { padding-top: 0.75rem!important; } .sw-padding-bottom-5xs { padding-bottom: 0.75rem!important; } .sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-text-decoration-no-underline { text-decoration: none!important; } @media (hover: hover) { .hover\:sw-text-decoration-no-underline:hover { text-decoration: none!important; } } @media (hover: hover) { .hover\:sw-box-shadow-m:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)!important; } } .sw-margin-bottom-6xs { margin-bottom: 0.5rem!important; } .sw-margin-right-5xs { margin-right: 0.75rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-font-size-4xl { font-size: 2.25rem!important; } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-line-height-loose { line-height: 2!important; } .sw-percentage-width-l { width: 65%!important; } .sw-border-radius-none { border-radius: 0rem!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; }  
+.sw-font-size-5xl { font-size: 3rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-5xs { margin-bottom: 0.75rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-text-decoration-underline { text-decoration: underline!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-letter-spacing-wider { letter-spacing: 0.05rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-cccccc { color: #cccccc!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-text-color-929daf { color: #929daf!important; }  
+.sw-font-size-5xl { font-size: 3rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-5xs { margin-bottom: 0.75rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-text-decoration-underline { text-decoration: underline!important; } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-letter-spacing-wider { letter-spacing: 0.05rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-333333 { color: #333333!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; }  
+.sw-font-size-5xl { font-size: 3rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-5xs { margin-bottom: 0.75rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-text-decoration-underline { text-decoration: underline!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-letter-spacing-wider { letter-spacing: 0.05rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-cccccc { color: #cccccc!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-text-color-929daf { color: #929daf!important; }  
+.sw-font-size-5xl { font-size: 3rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-5xs { margin-bottom: 0.75rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-text-decoration-underline { text-decoration: underline!important; } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-letter-spacing-wider { letter-spacing: 0.05rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-333333 { color: #333333!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; }  
+.sw-font-size-5xl { font-size: 3rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-5xs { margin-bottom: 0.75rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-text-decoration-underline { text-decoration: underline!important; } .sw-background-color-000000 { background-color: #000000!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-letter-spacing-wider { letter-spacing: 0.05rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-cccccc { color: #cccccc!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-text-color-929daf { color: #929daf!important; }  
+.sw-font-size-5xl { font-size: 3rem!important; } .sw-text-color-65b7cc { color: #65b7cc!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default {  } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-5xs { margin-bottom: 0.75rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default {  } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-text-decoration-underline { text-decoration: underline!important; } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-letter-spacing-wider { letter-spacing: 0.05rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-333333 { color: #333333!important; } .sw-font-family-lato { font-family: "Lato"!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; } .sw-text-color-f9d3b4 { color: #f9d3b4!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; }  
+.sw-text-color-000000 { color: #000000!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-width-11xs { width: 2rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-font-family-default {  } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-background-color-f9d3b4 { background-color: #f9d3b4!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-none { padding-bottom: 0rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-text-color-default {  } .sw-font-weight-default {  } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-display-block { display: block!important; } .sw-margin-top-3xs { margin-top: 1.25rem!important; } .sw-margin-bottom-3xs { margin-bottom: 1.25rem!important; } .sw-border-top-style-solid { border-top-style: solid!important; } .sw-border-top-color-cccccc { border-top-color: #cccccc!important; } .sw-width-7xs { width: 6rem!important; } .sw-font-family-montserrat { font-family: "Montserrat"!important; } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-wide { letter-spacing: 0.025rem!important; }  
+        </style>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="css/css2.css" rel="stylesheet">
+        <style>
+            .made-with-softr {
+              position: fixed;
+              z-index: 9999999;
+              left: 20px;
+              bottom: 20px;
+            }
+
+            .made-with-softr a {
+              width: 125px;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+              border-radius: 4px;
+              z-index: 9999999;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 6px 8px;
+              color: #1f2b3f;
+              background: #ffffff;
+              box-sizing: content-box;
+              text-decoration: none;
+              font-family: 'Nunito Sans', sans-serif;
+            }
+
+            .made-with-softr a .made-with {
+              margin-left: 2px;
+            }
+
+            .made-with-softr a img {
+                width: 16px;
+            }
+
+            .made-with-softr .softr-word {
+              color: #3b85db;
+            }
+
+            .made-with-softr .dark-theme {
+              color: #ffffff;
+              background: #1f2b3f;
+            }
+
+            .made-with-softr .dark-theme .softr-word {
+              color: #ffb30b;
+            }
+        </style>
+
+        
+
+        
+
+        <style>
+ .sw-font-size-5xl {
+    font-size: 3rem;
+  }
+  .sw-font-size-4xl {
+    font-size: 2.25rem;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if($(window).width() < 768) {
+       $('h1.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('h2.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('div.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('p.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('span.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+    }
+  });
+</script>
+
+        
+
+        <script>window['is401Page'] = false; </script>
+
+        <script>
+            /** Bugfix on multiple ?recordId= issue **/
+            setInterval(function() {
+                $('section a').each(function() {
+                    const href = $(this).attr('href');
+                    if(href && href.includes('?recordId=')) {
+                        const countOfRecords = (href.match(/\?recordId=/g) || []).length;
+                        if(countOfRecords > 1) {
+                            const index = href.lastIndexOf('?recordId=');
+                            const cleanedHref = href.substring(0, index);
+                            $(this).attr('href', cleanedHref);
+                        }
+                    }
+                });
+            }, 1000);
+        </script>
+
+        <script>
+            /** Image lineup on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                function changeImageDirectionsOnMobile() {
+                    var rowsWithImages = $('.row.align-items-center').has('img').toArray();
+
+                    var rowsWithLeftSideImages = rowsWithImages.filter(row => {
+                        return $(row).children().first().children().first().prop("tagName") === 'IMG';
+                    });
+
+                    rowsWithLeftSideImages.forEach(row => {
+                        if($(window).width() <= 768) {
+                            row.classList.add('flex-column-reverse')
+                        }
+                    });
+                }
+                if($(window).width() <= 768) {
+                    changeImageDirectionsOnMobile();
+                }
+            });
+
+            /** BG Size on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                if($(window).width() <= 768) {
+                    var element = $('section.sw-background-size-auto, header.sw-background-size-auto');
+                    element.removeClass('sw-background-size-auto');
+                    element.css('background-size', 'cover');
+
+                    $('section.sw-background-attachment-fixed, header.sw-background-attachment-fixed').removeClass('sw-background-attachment-fixed');
+                }
+            });
+
+            /** Disable zoom on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+               if($(window).width() <= 768) {
+                   $('input.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('textarea.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('select.sw-font-size-s').removeClass('sw-font-size-s');
+               }
+           });
+
+        </script>
+    </head>
+
+    <body>
+
+        <div data-appid="7e591680-4857-425b-ba2a-075747b91ab2" data-pageid="ec4333a6-c103-4573-bca1-9a520b3380f6" class="content"><header id="hero2" style="" class="hero1-3db5a3b7-9d09-475b-b9cf-60934783841b sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><div class="row align-items-center"><div class="col-lg-7 text-center"><img src="images/b8cee0b4-e696-48a0-90c3-368bf5d20e4c.png" class="sw-percentage-width-l sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-none   mx-auto d-block" alt="swinging monkey"></div><div class="col-lg-5 pt-5 pt-lg-0 text-center text-lg-left"><h1 class="sw-font-size-4xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">Planned Features</h1><p class="sw-font-size-xl sw-text-color-default sw-font-family-montserrat sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">The following features are planned to be developed in 2021. All releases would still require technical knowledge to use.</p><div class="d-flex justify-content-center justify-content-lg-start flex-wrap"><a data-element="button" target="_blank" class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-semibold sw-border-radius-full sw-background-color-default sw-padding-left-s sw-padding-right-s sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-letter-spacing-normal sw-text-decoration-no-underline hover:sw-text-decoration-no-underline hover:sw-box-shadow-m sw-margin-bottom-6xs sw-margin-right-5xs sw-display-inline-block" href="https://github.com/Dash-Monkey">View Code</a></div></div></div></div></header><section id="feature-grid2" style="" class="feature-grid7-16b2f99b-b698-49e6-9bc4-4cdb729e95e0 sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-md-left text-center"><h2 class="sw-font-size-5xl sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-medium sw-padding-top-none sw-padding-bottom-6xs sw-letter-spacing-wider sw-line-height-normal ">Address and Market Watchers</h2><p class="sw-font-size-xl sw-text-color-cccccc sw-font-family-lato sw-font-weight-light sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">The advantage of DeFi over traditional finance is that it is always on. Hence, it is of utmost importance to be on top of your wallets and investments.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Address Management</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Create lists of addresses to monitor and be notified of balance changes. Or monitor your positions in different DeFi pools.</p></div><div><a target="" href="/" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Fund grant</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Price Notifications</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Set support and resistance levels to get price notifications of different assets. Use a variety of data sources.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Reade more...</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Market Indicators</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Set up market triggers or follow standard market indicators to receive notifications on market movements.</p></div><div><a target="" href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">View Github</a></div></div></div></div></section><section id="feature-grid3" style="" class="feature-grid7-281339f8-e4a0-4147-a9fa-f458f7be4603 sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-md-left text-center"><h2 class="sw-font-size-5xl sw-text-color-000000 sw-font-family-default sw-font-weight-medium sw-padding-top-none sw-padding-bottom-6xs sw-letter-spacing-wider sw-line-height-normal ">Trading Recipes, Contracts</h2><p class="sw-font-size-xl sw-text-color-333333 sw-font-family-lato sw-font-weight-light sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">Investing is when you like a project and wish for it to succeed. Trading is winning on price action. There is no scope of emotions here. Create recipes and deploy them to trade on your behalf.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Grid Trading</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Employ a grid trading strategy to make money even on sideways trends. Developed for Perpetual Protocol, extended to other exchanges.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Read more...</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Backtest Systems</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Backtest trading strategies by using historic price data of virtual assets. Perfect* your recipe before deploying live!</p></div><div><a target="" href="/" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Fund grant</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Mint Recipes</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Mint your best recipes as NFTs and participate in community leaderboards. Earn fees when others subscribe to your recipes.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Read more...</a></div></div></div></div></section><section id="feature-grid4" style="" class="feature-grid7-23e80e76-a558-4be8-8f9e-7a7fd2bb0b1f sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-md-left text-center"><h2 class="sw-font-size-5xl sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-medium sw-padding-top-none sw-padding-bottom-6xs sw-letter-spacing-wider sw-line-height-normal ">Tokenised Buckets</h2><p class="sw-font-size-xl sw-text-color-cccccc sw-font-family-lato sw-font-weight-light sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">Diversification is generally a good idea. No matter what anyone tells you, any project can become null and void tomorrow and in such an event, you will wish that you held other assets. Create buckets to simplify the diversification process.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Diversified Portfolios</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Research and select assets to your bucket and invest regularly in predefined ratios. Note, invest not trade.</p></div><div><a target="" href="/" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Fund grant</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Recurring Buys</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Set up recurring buys to average your buy price for virtual assets. Invest over time to get the most of the long term price action.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Reade more...</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Mint Buckets</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Mint your bucket as an NFT and see how it performs compared to other buckets. Earn fees when others subscribe to your bucket.</p></div><div><a target="" href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">View Github</a></div></div></div></div></section><section id="feature-grid5" style="" class="feature-grid7-44097cdb-2050-4597-a0c9-443618987ed3 sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-md-left text-center"><h2 class="sw-font-size-5xl sw-text-color-000000 sw-font-family-default sw-font-weight-medium sw-padding-top-none sw-padding-bottom-6xs sw-letter-spacing-wider sw-line-height-normal ">Subscription Network</h2><p class="sw-font-size-xl sw-text-color-333333 sw-font-family-lato sw-font-weight-light sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">Mint your recipes and buckets as NFTs and let others subscribe to them for a fee. Or reduce your involvement in the market and defer to others' strategies.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">ENS Profiles</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Create decentralised profiles, deployed on IPFS so others may always have access to your NFTs. Mint once, earn anytime!</p></div><div><a target="" href="/" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Fund grant</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Follow recipes/buckets</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Subscribe to public or private recipes and buckets to defer trading and investing to the experts. Or become the expert and earn fees.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Read more...</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Stream Trading*</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Purchase virtual assets over a timeframe to average out the purchase price. Powered by Superfluid and Chainlink price oracles.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Read more...</a></div></div></div></div></section><section id="feature-grid6" style="" class="feature-grid7-1d51add3-500e-46b3-9024-b76a0c0ed2e1 sw-background-color-000000 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-md-left text-center"><h2 class="sw-font-size-5xl sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-medium sw-padding-top-none sw-padding-bottom-6xs sw-letter-spacing-wider sw-line-height-normal ">Discord Helper Bot</h2><p class="sw-font-size-xl sw-text-color-cccccc sw-font-family-lato sw-font-weight-light sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">Discord is fundamental to the crypto community. Its ease of use and its developer friendliness makes it ideal to manage large communities and even tasks and projects! You can interact with Dash Mon[k]ey by talking to the bot on Discord.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Parser</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Use simple commands to interact with Dash Mon[k]ey on the go! Get or set information or deploy bots when you wish.</p></div><div><a target="" href="/" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Fund grant</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Notifications</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Set up triggers or cron jobs for market movement, address transactions, or PnL statements to be notified as soon as the action happens!</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Reade more...</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-f9d3b4 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Open Source</h6><p class="sw-font-size-m sw-text-color-default sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">The bot may be self hosted, like the entire project, and be tinkered with, no problem! Every effort is made to make the code well documented.</p></div><div><a target="" href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">View Github</a></div></div></div></div></section><section id="feature-grid7" style="" class="feature-grid7-f027feb9-9db1-42b3-b9d1-1c12b4216029 sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000  sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-scroll "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-md-left text-center"><h2 class="sw-font-size-5xl sw-text-color-000000 sw-font-family-default sw-font-weight-medium sw-padding-top-none sw-padding-bottom-6xs sw-letter-spacing-wider sw-line-height-normal ">Inbuilt Trading Bots</h2><p class="sw-font-size-xl sw-text-color-333333 sw-font-family-lato sw-font-weight-light sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-wide sw-line-height-loose ">Bots are amazing. They provide a way for us to isolate an action or a process and repeat it <i>n</i> number of times with negligible supervision. The following bots are essential for the practical trader.</p></div></div><div class="row gap-y text-md-left text-center"><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Scalper</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Set up limits and increase your holdings in a virtual asset. The bot sells in bull conditions and buys in bear conditions.</p></div><div><a target="" href="/" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Fund grant</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Arbitrage*</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Get the most out of DeFi by capitalising on arbitrage on different exchanges. To be developed as a lower priority.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Read more...</a></div></div><div class="col-md-4  pt-4 pb-4 d-flex flex-column justify-content-between"><div><h6 class="sw-font-size-xl sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide sw-margin-bottom-5xs">Flash Loans*</h6><p class="sw-font-size-m sw-text-color-333333 sw-font-family-lato sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal ">Similar to arbitrage, but specific to DeFi liquidity pools. Borrow large sums to payback loans or provide liquidity, Paid back in the same txn.</p></div><div><a target="" href="" class="sw-font-size-m sw-text-color-f9d3b4 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-text-decoration-underline">Read more...</a></div></div></div></div></section><footer id="home_footer1" class="footer1-a47a6bdf-fa8e-4cb3-a9fd-34ee4afb4a7f sw-background-color-f9d3b4 sw-padding-top-2xl sw-padding-bottom-none sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><div class="row align-items-center"><div class="col-md-3 col-12 text-center text-md-left pb-md-2 pb-5"><a href="/"><img class="sw-width-7xs " src="images/2230eb56-6587-44c5-bb91-fe900fca634c.png" alt="Publish your designed things."></a></div><div class="col-md-9 col-12 pb-2"><div class="nav justify-content-center justify-content-md-end"><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/">Home</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/timeline">Timeline</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/features">Features</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="https://github.com/Dash-Monkey">Code</a><a target="" class="nav-link sw-font-size-m sw-text-color-000000 sw-font-family-montserrat sw-font-weight-medium sw-letter-spacing-wide " href="/funding">Funding</a></div></div></div><div class="row"><div class="col-12"><hr class="sw-margin-top-3xs sw-margin-bottom-3xs sw-border-top-style-solid sw-border-top-width-xs sw-border-top-color-cccccc "></div></div><div class="row"><div class="col-7"><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-display-block"></small></div><div class="col-5"><div class="text-right"></div></div></div></div></footer></div>
+
+            <script>
+                (() => {
+                  function rgb2hex(orig) {
+                    var rgb = orig.replace(/\s/g, "").match(/^rgba?\((\d+),(\d+),(\d+)/i);
+                    return rgb && rgb.length === 4
+                      ? "#" +
+                          ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
+                      : orig;
+                  }
+
+                  function lightOrDark(color) {
+                    // Variables for red, green, blue values
+                    var r, g, b, hsp;
+
+                    // Check the format of the color, HEX or RGB?
+                    if (color.match(/^rgb/)) {
+                      // If RGB --> store the red, green, blue values in separate variables
+                      color = color.match(
+                        /^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
+                      );
+
+                      r = color[1];
+                      g = color[2];
+                      b = color[3];
+                    } else {
+                      // If hex --> Convert it to RGB: http://gist.github.com/983661
+                      color = +(
+                        "0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&")
+                      );
+
+                      r = color >> 16;
+                      g = (color >> 8) & 255;
+                      b = color & 255;
+                    }
+
+                    // HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+                    hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+
+                    // Using the HSP value, determine whether the color is light or dark
+                    if (hsp > 127.5) {
+                      return "light";
+                    } else {
+                      return "dark";
+                    }
+                  }
+
+                  function createBudgetWrapperDivEl() {
+                    const divEl = document.createElement("div");
+                    divEl.setAttribute("class", "made-with-softr");
+
+                    divEl.innerHTML = `
+                   <a href="https://www.softr.io/?utm_source=madewithbadge" target="_blank" title="Softr - Build a website, web app or portal on Airtable without code">
+                      <img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/softr_logo_icon_only.svg" alt="Softr - Build a website, web app or portal on Airtable without code">
+                      <span class="made-with">Made with</span>
+                      <span class="softr-word">Softr</span>
+                    </a>`;
+                    document.body.appendChild(divEl);
+                  }
+
+                  function isInCurrentSection(elTop, elBottom) {
+                    const innerHeight = window.innerHeight - 30;
+                    return elTop < innerHeight && elBottom > innerHeight;
+                  }
+
+                  function setRightTheme(sections, softrEl) {
+                    sections.forEach(item => {
+                      const elementTop = item.getBoundingClientRect().top;
+                      const elementBottom = item.getBoundingClientRect().bottom;
+
+                      if (isInCurrentSection(elementTop, elementBottom)) {
+                        const documentBodyColor = window
+                          .getComputedStyle(item)
+                          .getPropertyValue("background-color");
+
+                        const bgColor = lightOrDark(rgb2hex(documentBodyColor));
+
+                        if (bgColor === "light") {
+                          softrEl.classList.add("dark-theme");
+                        } else {
+                          softrEl.classList.remove("dark-theme");
+                        }
+                      }
+                    });
+                  }
+
+                  function init() {
+                    const madeWithSoftrEl = document.querySelector(".made-with-softr");
+
+                    if (madeWithSoftrEl) {
+                      madeWithSoftrEl.remove();
+                    }
+
+                    createBudgetWrapperDivEl();
+                    const headers = document.querySelectorAll("header");
+                    const sections = document.querySelectorAll("section");
+                    const footers = document.querySelectorAll("footer");
+                    const softrEl = document.querySelector(".made-with-softr a");
+                    const allSections = [...headers, ...sections, ...footers];
+                    setRightTheme(allSections, softrEl);
+
+                    document.addEventListener("scroll", () => {
+                      setRightTheme(allSections, softrEl);
+                    });
+                  }
+
+                  init();
+                  setInterval(() => init(), 50 * 1000);
+                })();
+            </script>
+
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            if(window.jQuery && window.jQuery.ajaxSetup) {
+                window.jQuery.ajaxSetup({
+                    beforeSend: function(xhr, settings) {
+                        if(settings && settings.url && settings.url.includes('/integrations/airtable/')){
+                            xhr.setRequestHeader('softr-page-id', 'ec4333a6-c103-4573-bca1-9a520b3380f6');
+                        }
+                    }
+                });
+            }
+
+            window['hero2'] = {}; 
+window['feature-grid2'] = {}; 
+window['feature-grid3'] = {}; 
+window['feature-grid4'] = {}; 
+window['feature-grid5'] = {}; 
+window['feature-grid6'] = {}; 
+window['feature-grid7'] = {}; 
+
+        </script>
+
+        
+        
+
+        <script src="js/iframeResizer.contentWindow.js" crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            if(location.origin === 'https://www.softr.io') {
+              if (document.body.clientWidth <= 576) {
+                document.getElementsByClassName('made-with-softr')[0].style.display = 'none'
+              }
+            }
+          });
+        </script>
+    
+
+
+</body></html>
